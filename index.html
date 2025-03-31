@@ -10,16 +10,16 @@
   </style>
   <body>
     <script>
-      // function elementVisibleEvent(paramater) {
-      //   window.dataLayer = window.dataLayer || [];
-      //     dataLayer.push({
-      //        'event': 'element_visible',
-      //        'visible_element': paramater,
-      //   })
-      // }
-      // setTimeout(function() {
-      //   elementVisibleEvent('hoge');
-      // }, 2000);
+      function elementVisibleEvent(paramater) {
+        window.dataLayer = window.dataLayer || [];
+          dataLayer.push({
+             'event': 'element_visible',
+             'visible_element': paramater,
+        })
+      }
+      setTimeout(function() {
+        elementVisibleEvent('hoge');
+      }, 2000);
     </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
