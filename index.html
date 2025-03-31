@@ -17,7 +17,9 @@
              'visible_element': paramater,
         })
       }
-      setTimeout(elementVisibleEvent('hoge'), 2000);
+      setTimeout(function() {
+        elementVisibleEvent('hoge');
+      }, 2000);
     </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
