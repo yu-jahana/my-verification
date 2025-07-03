@@ -34,6 +34,6 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div data-ga-value="hoge">テストです</div>
-    <a href="https://yu-jahana.github.io/my-verification/some">index へ</a>
+    <a href="https://yu-jahana.github.io/my-verification/">index へ</a>
   </body>
 </html>
