@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="no-referrer-when-downgrade"/>
+    
+  </head>
+  <style>
+    [data-ga-value] {
+      color:red;
+    }
+  </style>
+  <body>
+    <script>
+      function elementVisibleEvent(paramater) {
+        window.dataLayer = window.dataLayer || [];
+          dataLayer.push({
+             'event': 'element_visible',
+             'visible_element': paramater,
+        })
+      }
+      setTimeout(function() {
+        elementVisibleEvent('hoge');
+      }, 4000);
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WVX6PWMX');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVX6PWMX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div data-ga-value="hoge">テストです</div>
+    <a href="https://yu-jahana.github.io/my-verification/some">index へ</a>
+  </body>
+</html>
